@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/satpaljangir22/go-rest-api-automation.git']])
+        git 'https://github.com/satpaljangir22/go-rest-api-automation.git'
       }
     }
 
